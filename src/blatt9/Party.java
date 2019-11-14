@@ -1,6 +1,6 @@
 package blatt9;
 
-import Prog1Tools.IOTools;
+import iotools.IOTools;
 
 public class Party {
 	

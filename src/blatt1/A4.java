@@ -23,7 +23,6 @@ public class A4 {
 		int minutes = rest/60;
 		rest %= 60;
 		System.out.printf("%d Sekunden entsprechen: \n%d Jahren, \n%d Tagen, \n%d Stunden, \n%d Minuten und \n%d Sekunden", sec, years, days, hours, minutes, rest);
-
 		
 	}
 

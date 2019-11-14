@@ -11,7 +11,7 @@ public class TestStrecke {
     System.out.println();
 
     System.out.println("Strecke s eingeben:");
-    s.read();
+    Strecke.read();
     System.out.println();
 
     System.out.println("Die Laenge der Strecke " + s + 
