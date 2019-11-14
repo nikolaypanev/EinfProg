@@ -13,6 +13,7 @@ public class BruchRechnen {
 			System.out.println("Nenner ist 0, bitte erneut eingeben: ");
 			b = IOTools.readInt();
 		}
+		@SuppressWarnings("unused")
 		Bruchzahl zahl = new Bruchzahl(a, b);
 	}
 	
