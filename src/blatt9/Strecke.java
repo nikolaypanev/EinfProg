@@ -13,7 +13,7 @@ public class Strecke {
 	}
 	
 	public static void read() {
-		double p = (IOTools.readDouble());
+		double p = IOTools.readDouble();
 		System.out.println("X-Koordinate der Punkt P: " + p);
 		double q = IOTools.readDouble();
 		System.out.println("Y-Koordinate der Punkt Q:" + q);
