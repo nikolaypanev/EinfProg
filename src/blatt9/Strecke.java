@@ -19,6 +19,10 @@ public class Strecke {
 		System.out.println("Y-Koordinate der Punkt Q:" + q);
 	}
 	
+	public String toString() {
+		return p.toString() + "_" + q.toString();
+	}
+	
 	public double getLaenge() {
 		double laenge = Math.sqrt(Math.pow((p.getX() - q.getX()), 2) + Math.pow((p.getY() - p.getY()), 2));
 		return laenge;
