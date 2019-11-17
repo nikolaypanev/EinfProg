@@ -9,7 +9,7 @@ public class BruchRechner {
 		Bruch br1 = new Bruch();
 		Bruch br2 = new Bruch();
 		
-		char input = ' ';
+		char input = ' '; //initialisiert hier ohne Wert, sonst lauft die Schleife inkorrekt
 		
 		while (input != 'x') {
 			System.out.println("Bruch 1: " + br1);

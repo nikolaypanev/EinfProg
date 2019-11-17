@@ -4,6 +4,7 @@ public class BruchTest {
 
 	public static void main(String[] args) {
 		
+		//Initialisiert ohne Wert
 		Bruch br1 = new Bruch();
 		Bruch br2 = new Bruch();
 		

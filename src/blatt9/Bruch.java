@@ -12,7 +12,7 @@ public class Bruch {
 		this.nenner = nenner;
 	}
 	
-	//leerer Konstruktor
+	//leerer Konstruktor, erlaubt das Erstellen leerer Objekte
 	public Bruch() {
 		
 	}
@@ -40,6 +40,7 @@ public class Bruch {
 		} while (nenner == 0);
 	}
 	
+	//Kuerzen um den GGT
 	public Bruch kuerze() {
 		return new Bruch(zaehler/ggt(zaehler,nenner), nenner/ggt(zaehler,nenner));
 	}
