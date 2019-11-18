@@ -2,18 +2,18 @@ package blatt9;
 
 public class CD {
 		
-		private String titel;
-		private double spieldauer;
-		private boolean ausleihstatus;
+		String titel;
+		double spieldauer;
+		boolean ausleihstatus;
 		
 		public CD (String titel, double spieldauer, boolean ausleihstatus) {
-			this.setTitel(titel);
-			this.setSpieldauer(spieldauer);
-			this.setAusleihstatus(ausleihstatus);
+			this.titel = titel;
+			this.spieldauer = spieldauer;
+			this.ausleihstatus = ausleihstatus;
 		}
 		
 		public String toString() {
-			return getTitel() + " " + getSpieldauer() + " Minuten";
+			return titel + " " + spieldauer + " Minuten";
 		}
 
 

@@ -35,7 +35,7 @@ public class Party {
 				CD cd1 = cdf[j];
 				CD cd2 = cdf[j + 1];
 				
-				if (cd1.getSpieldauer() > cd2.getSpieldauer()) {
+				if (cd1.spieldauer > cd2.spieldauer) {
 					cdf[j + 1] = cd1;
 					cdf[j] = cd2;
 				}
@@ -46,7 +46,7 @@ public class Party {
 	
 	public static void vorhandeneAusgaben(CD[] cdf) {
 		for (int i = 0; i < cdf.length; i++) {
-			if (cdf[i].isAusleihstatus() == true) {
+			if (cdf[i].ausleihstatus == true) {
 				continue;
 			} else {
 				System.out.println(cdf[i]);
