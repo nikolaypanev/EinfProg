@@ -12,9 +12,8 @@ public class Punkt {
 		this.setY(y);
 	}
 	
-	public void toString(double x, double y) {
-		System.out.println("Koordinate x: " + getX());
-		System.out.println("Koordiante y:" + getY());
+	public String toString() {
+		return getX() + ";" + getY();
 	}
 	
 	public void read(double a, double b) {
