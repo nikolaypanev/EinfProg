@@ -2,7 +2,7 @@ package blatt11;
 
 public class FarbFernseher extends Fernseher {
 
-	private int farbe;
+	private int color;
 	
 	public FarbFernseher(String ra, int vo, int pr, int farbe) {
 		super(ra, vo, pr);
@@ -11,8 +11,8 @@ public class FarbFernseher extends Fernseher {
 	
 	//overrides Fernseher.change()
 	public void change(String einstell, int wert) {
-		if (einstell.equals("farbe")) {
-			farbe += wert;
+		if (einstell.equals("color")) {
+			color += wert;
 		} else {
 			super.change(einstell, wert);
 		}
@@ -20,7 +20,7 @@ public class FarbFernseher extends Fernseher {
 	
 	//true only when, object attribute < parameter & farbe is in range
 	public boolean istAngenehmerAls (FarbFernseher fernseher) {
-		if (getVolume() < fernseher.getVolume() && farbe < 40 && farbe > fernseher.farbe) {
+		if (getVolume() < fernseher.getVolume() && color < 40 && color > fernseher.color) {
 			return true;
 		} else {
 			return false;
@@ -29,7 +29,7 @@ public class FarbFernseher extends Fernseher {
 	
 	//overrides Fernseher.toString()
 	public String toString() {
-		return super.toString() + "farbe=" + farbe;
+		return super.toString() + "farbe=" + color;
 	}
 	
 }
