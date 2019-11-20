@@ -29,7 +29,7 @@ public class FarbFernseher extends Fernseher {
 	
 	//overrides Fernseher.toString()
 	public String toString() {
-		return super.toString() + "farbe=" + color;
+		return super.toString() + ", c=" + color;
 	}
 	
 }
