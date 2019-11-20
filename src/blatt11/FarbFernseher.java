@@ -9,8 +9,13 @@ public class FarbFernseher extends Fernseher {
 		this.farbe = farbe;
 	}
 	
+	//overrides Fernseher.change()
 	public void change(String einstell, int wert) {
-		
+		if (einstell.equals("farbe")) {
+			farbe += wert;
+		} else {
+			super.change(einstell, wert);
+		}
 	}
 	
 	public boolean istAngenehmerAls (FarbFernseher fernseher) {
