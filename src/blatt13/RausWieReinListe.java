@@ -1,27 +1,33 @@
 package blatt13;
 
+import java.util.*;
 
+@SuppressWarnings("unused")
 public class RausWieReinListe implements WarteListe {
 
 	private Patient liste[] = new Patient[1000];
 	
-	private int current;
+	private int added;
 	private int next;
 	
 	public RausWieReinListe() {
-		 
+	
 	}
 	
 	@Override
 	public void rein(Patient p) {	
-		liste[current] = p;
-		liste[current] = liste[next]; //move to next index
+		for (int i = 0; i < liste.length; i++) {
+			if (liste[i] == null) { //add patient if index is empty
+				liste[i] = p; 
+			}
+		}
+		added++; 
 	}
 
 	@Override
 	public Patient raus() {
-		liste[current] = null; // delete value on index
-		return liste[current];
+		
+		return null;
 	}
 
 }
