@@ -14,9 +14,10 @@ public class Kontostand extends Zahl {
 	}
 
 	@Override
-	public Zahl add(Zahl zahl) {
-		//return new Kontostand(zahl.add(wert)); zahl and wert are different data types
-		return null;
+	public Zahl add(Zahl z) {
+		Kontostand k = (Kontostand) z; //cast to Kontostand type to get value
+		double w = k.wert + wert;
+		return new Kontostand(w);
 	}
 	
 	public String toString() {
