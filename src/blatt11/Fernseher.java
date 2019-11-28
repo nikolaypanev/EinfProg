@@ -27,6 +27,7 @@ public class Fernseher {
 		}
 	}
 
+	@Override
 	public String toString() { // liefert String-Darstellung des Fernsehers
 		return "Fernseher im " + raum +
 				": v=" + volume + 

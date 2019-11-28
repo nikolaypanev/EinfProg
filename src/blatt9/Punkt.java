@@ -12,6 +12,7 @@ public class Punkt {
 		this.setY(y);
 	}
 	
+	@Override
 	public String toString() {
 		return getX() + ";" + getY();
 	}

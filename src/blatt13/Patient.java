@@ -14,6 +14,7 @@ public class Patient {
 		return geburtsJahr;
 	}
 	
+	@Override
 	public String toString() {
 		return name + " (geb. " + geburtsJahr + ")";
 	}

@@ -26,6 +26,7 @@ public class Bruch {
 		}
 	}
 	
+	@Override
 	public String toString() {
 		return zaehler + "/" + nenner;
 	}

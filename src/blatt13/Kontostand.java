@@ -20,6 +20,7 @@ public class Kontostand extends Zahl {
 		return new Kontostand(w);
 	}
 	
+	@Override
 	public String toString() {
 		return "Kontostand: " + wert;
 	}

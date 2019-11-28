@@ -1,7 +1,5 @@
 package blatt13;
 
-import java.util.*;
-
 @SuppressWarnings("unused")
 public class RausWieReinListe implements WarteListe {
 

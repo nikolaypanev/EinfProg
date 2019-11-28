@@ -42,6 +42,7 @@ package blatt11;
 			korrigierePosition();
 		}
 
+		@Override
 		public String toString() {
 			return farbe + "e Figur auf Feld " + xPos + yPos;
 		}

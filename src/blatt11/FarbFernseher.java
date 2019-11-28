@@ -10,6 +10,7 @@ public class FarbFernseher extends Fernseher {
 	}
 	
 	//overrides Fernseher.change()
+	@Override
 	public void change(String einstell, int wert) {
 		if (einstell.equals("color")) {
 			color += wert;
@@ -28,6 +29,7 @@ public class FarbFernseher extends Fernseher {
 	}
 	
 	//overrides Fernseher.toString()
+	@Override
 	public String toString() {
 		return super.toString() + ", c=" + color;
 	}

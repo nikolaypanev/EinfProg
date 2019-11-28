@@ -19,6 +19,7 @@ public class Strecke {
 		System.out.println("Y-Koordinate der Punkt Q:" + q);
 	}
 	
+	@Override
 	public String toString() {
 		return p.toString() + "_" + q.toString();
 	}

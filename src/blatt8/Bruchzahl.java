@@ -10,6 +10,7 @@ public class Bruchzahl {
 		this.setNenner(nenner);
 	}
 	
+	@Override
 	public String toString() {
 		return zaehler + "/" + nenner;
 	}

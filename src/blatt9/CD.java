@@ -12,6 +12,7 @@ public class CD {
 			this.ausleihstatus = ausleihstatus;
 		}
 		
+		@Override
 		public String toString() {
 			return titel + " " + spieldauer + " Minuten";
 		}

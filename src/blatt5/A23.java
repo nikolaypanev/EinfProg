@@ -1,7 +1,5 @@
 package blatt5;
 
-import java.util.Arrays;
-
 import iotools.IOTools;
 
 @SuppressWarnings("unused")

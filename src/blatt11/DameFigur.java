@@ -28,6 +28,7 @@ public class DameFigur extends Spielfigur {
 		return (dame.getXpos() == getXpos()) && (dame.getYpos() == getYpos()); //if-clause not needed, output will be a true/false value
 	}
 	
+	@Override
 	public String toString() {
 		return getFarbe() + "...e Dame auf dem Feld " + getXpos() + " " + getYpos();
 	}
