@@ -1,6 +1,5 @@
 package blatt15;
 
-@SuppressWarnings("unused")
 public class Gleichung {
 
 	private double a;

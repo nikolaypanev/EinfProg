@@ -1,32 +1,18 @@
 package blatt15;
 
 public class Berechne {
-	
-	@SuppressWarnings("unused")
-	public static void main(String[] args) {
-		
-		String fn = args[0]; //to lowercase
-		String val = args[1]; //must be a double number
-		
-	}
-	
-	//must be in range (1;-1)
-	public double sinus(double arg) {
-		return Math.asin(arg);
-	}
-	
-	//must be in range (1;-1)
-	public double cosinus(double arg) {
-		return Math.cos(arg);
-	}
-	
-	//no specified range
-	public double tangens(double arg) {
-		return Math.tan(arg);
+
+	public static void main(String[] args) throws InvalidInputException, NoSuchFunctionException {
+		try { 
+			//Function f = new Function(args[0], args[1]);
+
+		} 
+		catch(ArrayIndexOutOfBoundsException aiobe) {
+			System.out.println("Korrekter Programmaufruf: java <Funktion> <Argument>");
+		}
+		catch(IllegalArgumentException iae) {
+			//illegal argument message
+		}
 	}
 
-	public void eingabe() {
-		
-	}
-	
 }
