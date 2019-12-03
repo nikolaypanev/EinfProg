@@ -1,5 +1,6 @@
 package blatt15;
 
+
 public class Function {
 	
 	@SuppressWarnings("unused")
@@ -7,12 +8,7 @@ public class Function {
 	@SuppressWarnings("unused")
 	private double wert;
 	
-	
-	public Function(String a, String b) {
-		this.wert = Double.parseDouble(a);
-	}
-	
-	public double sinus(double arg) throws IllegalArgumentException {
+	public static double sinus(double arg) throws NumberFormatException {
 		if (arg == Double.NaN) {
 			throw new IllegalArgumentException("Value cannot be zero!");
 		} else {
@@ -20,7 +16,7 @@ public class Function {
 		}
 	}
 	
-	public double cosinus(double arg) throws IllegalArgumentException {
+	public static double cosinus(double arg) throws NumberFormatException {
 		if (arg == Double.NaN) {
 			throw new IllegalArgumentException("Invalid input!");
 		} else {
@@ -28,13 +24,12 @@ public class Function {
 		}
 	}
 	
-	public double tangens(double arg) throws IllegalArgumentException {
+	public static double tangens(double arg) throws NumberFormatException {
 		if (arg == Double.NaN) {
 			throw new IllegalArgumentException("Invalid input!");
 		} else {
 			return Math.tan(arg);
 		}
 	}
-
 
 }
